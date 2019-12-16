@@ -211,3 +211,446 @@ student_infos.append([id,name,score_,score_exp,score_test,0])
  score_exp = float(score_exp) 
  score_test = float(score_test)
 ```
+
+#### 3.9 习题
+
+```
+1.	下列关于函数正确的是（ ）
+A. 函数是用于创建对象的             B. 函数使代码执行更快 
+C. 函数是完成特定工作的代码片段     D. 上述陈述都对
+2.	下列代码的输出是什么？
+     def printJob(name,job):
+        print(name)
+        print("你的工作是：",job)     
+     printJob("hwdong","教小白精通编程")
+3.	如果函数中没有return，则函数返回的是（ ）
+ A.  0               B. None
+ C.  任意整数        D. python的函数必须包含return语句
+4.	完善下面的根据BMI指数判断一个人是否超重(BMI指数小于25，表示未超重，否则就超重)的函数。并编写代码：从键盘输入身高和体重，测试这个函数。
+def overweight_by_BMI(name ,height,weight):
+      bmi = ?     # 用bmi变量表示BMI指数
+      if ? :
+         print(name,"没有超重")
+      else    
+         print(name,"超重了")
+      print("你的BMI指数是:",bmi)
+      return bmi
+5.	下列代码是否有错误？为什么？输出是什么？
+x = "global"
+def fun(x):
+    x = x*2
+    print(x)
+
+fun(x)
+print(x)
+6.	编写一个非递归的函数接受一个整数参数n，返回这个n对应的斐波那契（Fibonacci）序列，可以用一个list保存这个序列，例如Fib(100)返回的Fibonacci序列是：
+[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
+然后，从键盘输入一个整数，调用这个函数并打印结果。
+7.	定义一个求一元二次方程的函数，方程的系数作为3个参数，返回一个无解、1个解或2个解的结果。并从键盘输入方程系数，测试函数是否能够正确求解。
+8.	编写一个函数，计算传入字符串中的数字、字母、空格和其他字符的个数
+9.	写一个函数，将传入的list对象的元素每间隔3个选择一个元素，构造并返回一个tuple对象。例如：
+输入：[1,2,3,4,5,6,7,8,9]，输出：(1,4,7)
+10.	将一个英文语句以单词为单位逆序排放。例如“I am a boy”，逆序排放后为“boy a am I”。假设所有单词之间用一个空格隔开，语句中除了英文字母外，不再包含其他字符。
+11.	重新实现习题2.40的学生成绩分析程序，用一系列函数完成单独的功能。如专门的函数用于输入一个学生的信息。
+12.	编写一个函数，不调用内置的排序函数，对3个数进行排序和输出，并附带一个默认参数reverse=False，表示默认从小到大排序，当该形参对应的实参为True时，则从大到小排序。
+13.	编写一个可以求多个数的乘积的函数Product()，可以接受1个或多个数作为参数。运行示例如下：
+print(‘Product(3)’ , Product(3)) 
+print(‘Product(3,4)’ , Product(3,4))
+print(‘Product(3,4,5)’ , Product(3,4,5))
+…
+14.	编写一个函数Student()，除学生名外，还接受可变数目信息和关键字信息，返回将学生信息以list对象形式返回。运行示例如下：
+Student(‘Li’,23)
+Student(‘Li’,21,’男’,class=’计科3班’,’city’= ‘Shanghai’,’phone’=’12381233451’)
+15.	递归函数是（  ）
+A. 在程序中调用所有函数的函数       B.  调用自身的函数
+C. 调用除自身以外的所有函数的函数   D. Python没有递归函数的概念
+16.	写一个函数输入一个整数n，输出n行的Pascal 三角形，如图所示：
+               1
+            1     1
+         1    2     1
+      1    3    3      1
+   1    4    6    4      1
+1    5    10    10    5    1
+17.	下列程序的输出是什么？
+result = lambda x: x * x
+print(result(5))
+A. lambda x: x*x             B. 10
+C. 25                        D. 5*5
+18.	下列代码的输出是什么？
+numbers = [1, 3, 6]
+newNumbers = tuple(map(lambda x: x , numbers))
+print(newNumbers)
+A. [1, 3, 6]              B. (1, 3, 6)
+C. [2, 6, 12]             D. (2, 6, 12)
+19.	改写前面的“猜数字游戏”程序，用随机数模块random的随机数函数随机生成一个“待猜的数字”。
+20.	用普通函数和Lambda函数定义下列函数：
+1）2个输入参数，返回这2个数的平方和的根。
+2) 可接受任意个数的数，并计算这些数的平均值。如果没有输入任何数，则平均值为0。
+3）输入一个字符串，返回一个不包含重复字符的字符串。
+21.	利用 map()函数，把用户输入的不规范的英文名字，变为首字母大写，其他小写的规范名字。
+例如，输入： [‘adam’, ‘LISA’, ‘barT’]，输出： [‘Adam’, ‘Lisa’, ‘Bart’]
+22.	假如要输出math模块中的常数pi,下列正确的是( )
+A. print(math.pi)                              B. print(pi)
+B. from math import pi
+   print(pi)
+C. from math import pi
+   print(math.pi)
+23.	下列哪个运算符用于从一个包导入一个模块？
+A.  .运算符    B.    * 运算符    C. -> 运算符     D.  , 运算符
+```
+
+#### 4.8 习题
+
+```
+1.	下面哪个是不正确的？
+A. x = 0b101           B.  x = 0x4f5    C. x = 19023   D.  x = 03964
+2.	下面的代码输出是什么？
+print(1j)
+A. <type 'float'>   B. <type 'dict'>    C.   <type 'unicode'>    D.   <type 'complex'>
+3.	下面的说法是否正确？
+Python有2种数值类型：integer整数和有符号数 
+A. True B. False
+4.	写一个语句，以二进制、十进制、八进制、十六进制形式输出一个整数23。
+5.	语句print(0.2 + 0.2 == 0.5)的输出是
+A. True          B. False       C. 机器依赖        D. 错误Error   
+6.	下面哪句是错误的？
+A.   float(‘inf’)           B.  float(‘nan’)          
+C.   float(’56’+’78’)       D.  float(‘12+34’)
+7.	编写一个函数Sin(x)按照第二章的34题计算正弦函数sin(x)的值, 用math模块的函数pow()和factorial()计算指数和阶乘，调用下列代码测试你的Sin(x)函数。并和math模块自带的sin(x)函数的结果进行比较。
+print(Sin(math.pi/2))    # returns 1.0
+print(Sin(math.pi/4))    # returns 0.7071067811865475
+8.	下面哪个命令可创建一个list对象？
+A.  list1 = list()          B. list1 = []      
+C. list1 = list([1, 2, 3])    D.  上述都可以
+9.	插入5成为alist的第3个元素，应该用哪个命令?
+A.  alist.insert(3, 5)       B. alist.insert(2, 5)
+C.  alist.add(3, 5)         D. alist.append(3, 5)
+10.	下列代码的输出是（ ）?
+lst=[[1,2],[3,4]]
+print(sum(lst,[]))
+A.	[[3],[7]]              B. [1,2,3,4]
+c)	Error                D.	[10]
+11.	下列代码的输出是( )
+x=[[1],[2]]
+print(" ".join(list(map(str,x))))
+A.	[1] [2]               B.	[49] [50]       
+C.	Syntax error          D.	[[1]] [[2]]
+12.	下列代码的输出是什么?
+a=[2,5,7]
+a.append([17])
+a.extend([3,11])
+print(a)
+13.	下列代码的输出是什么?
+a=list((45,)*4)
+print((45)*4)
+print(a)
+14.	下列代码的输出是什么？
+matrix = [[1, 2, 3, 4],
+       [4, 5, 6, 7],
+       [8, 9, 10, 11],
+       [12, 13, 14, 15]] 
+for i in range(0, 4):
+    print(matrix[i][1], end = " ")
+15.	下列代码的输出是什么？
+points = [[1, 2], [3, 1.5], [0.5, 0.5]]
+points.sort()
+print(points)
+16.	下列代码的输出是( )
+def change(var, lst):
+    var = 1
+    lst[0] = 44
+k = 3
+a = [1, 2, 3]
+change(k, a)
+print(k)
+print(a)
+A. 3                B. 1              C. 3               D. 1
+   [44, 2, 3]           [1,2,3]            [1,2,3]              [44,2,3]
+17.	下列代码的输出是（）
+L=["hello", "yes!", "a123"]
+[n for n in L if n.isalpha() or n.isdigit()]
+A.  [‘hello’, ‘yes’, ‘123’	]            B. [‘hello’]
+C.  [‘hello’, ‘a123’]                  D. [‘yes!’, ‘a123’]
+18.	下列代码的输出是什么？
+[j for i in range(2,5) for j in range(i*2, 10, i)]
+19.	编写程序：用list表示两个矩阵，计算它们的乘积并放入另外一个list对象中。哪个答案能打印如下的结果?
+C:\Hwdong\String.doc
+A. str='C:\Hwdong\Stri\ng.doc'         B. str='''C:\\Hwdong\string.doc'''
+   print(str)                               print(str)      
+C. str='C:\\Hwdo\ng\St\ring.doc'       D. str='C:\\Hwdong\String.doc'
+   print(str)                               print(str)       
+20.	下列语句的输出是（）
+print("\x48\x49!")
+A. \x48\x49!     B. 4849         C. 4849!     D.  48  E.  49!   F. HI!
+21.	下列代码的输出是（）
+str='hello world'
+print (str[::-1])
+A. world         B.   dlrow olleh        C.  hello world      D. hello
+22.	下列代码的输出是什么?
+str='Python is easy to learn, C is hard'
+print(str.rfind('s'))
+print(str.rfind('r'))
+L = len(str)
+print(str.count('is', -(L-2), -1))
+print(str.endswith("rd"))
+23.	web网页中的标记都是以"<>"开头和结尾的，中间的部分就是标记的内容，例如：<a href="string1">string2</a>表示的是一个超链接。编写代码抽取其中的内容即string2。
+24.	下列语句的输出是( )。
+print("Hello {name1} and {name2}".format('foo', 'bin'))
+A. Hello foo and bin         B. Hello {name1} and {name2}
+C. Error                     D. Hello and
+25.	下列程序的输出是：
+print('The sum of {0:b} and {1:x} is {2:o}'.format(2, 10, 12))
+A. The sum of 2 and 10 is 12              B. The sum of 10 and a is 14
+C. The sum of 10 and a is c               D. Error
+26.	下列代码的输出是( )
+print('abcdefcdghcd'.split('cd', 2))
+A.  [‘ab’, ‘ef’, ‘ghcd’]             B. [‘ab’, ‘efcdghcd’]
+C. [‘abcdef’, ‘ghcd’]                D. none of the mentioned
+27.	编写程序，输入一个字符串，返回一个首尾各2个字符组成的字符串，例如’’string’返回的字符串是‘stng’，如果原字符串长度小于2，则返回一个空串。
+28.	从键盘输入多个逗号隔开的字符串，将它们拼接成一个字符串。如输入：
+'hello','world','abc'产生的是'hello world abc'。
+29.	假如要修改tuple对象test的第3个元素为‘Python’,下面哪个是正确的？
+A.  test[2] = 'Python'     B. test(2) = 'Python'  C. test[3] = 'Python'
+D. 不能修改tuple的元素
+30.	下列代码输出是什么？
+my_tuple = (1, 2, 3, 4)
+my_tuple.append( (5, 6, 7) )
+print(len(my_tuple))
+A. 5     B. 7     C. 2  D. Error 
+31.	下列代码的输出是什么? ( )
+d = {}
+d[(1,2,4)] = 8
+d[(4,2,1)] = 10
+d[(1,2)] = 12
+sum = 0
+for k in d:
+    sum += d[k]
+print (len(d) + sum)
+A. 30        B. 24       C. 33      D.12
+32.	下列代码的输出是什么( )？
+a = ('hello',)
+n = 2
+for i in range(int(n)):
+    a = (a,)
+    print(a)
+A.	错，tuples是不可修改的   B.	 ((‘hello’,),)
+                                    (((‘hello’,),),).
+C. 	((‘hello’,)’hello’,)            D.    ((‘hello’,)’hello’,)
+                                    (((‘hello’,)’hello’,)’hello’,)
+33.	下列代码输出是什么（）
+a,b=6,7
+a,b=b,a
+a,b
+A.	(6,7)         B. Invalid syntax
+C.	(7,6)         D. 没有任何输出
+34.	下列代码的输出是什么?
+a=(1,2)
+b=(3,4)
+print(a+b)
+A. (4,6)                        B. (1,2,3,4)   
+C. 错，因为tuple是不可修改的   D. 上述说法都不对
+35.	关于set，正确的说法是（）
+A.  一个set是数据元素的无序集合           B. set中的元素是唯一的.
+C. 不同于tuple，可以修改set中的元素        D. 上述说法都对
+36.	下面哪个创建set对象的语句是错误的？
+A.    set([[1,2],[3,4]])         B. set([1,2,2,3,4])
+C.    set((1,2,3,4))            D. {1,2,3,4}
+37.	下列代码输出是什么()?
+a={4,5,6}
+b={2,8,6}
+a+b
+A.    {4,5,6,2,8}        B.    {4,5,6,2,8,6}
+C.    Error错误，因为set对象无法使用+运算符
+D.    Error错误，因为出现了重复的6
+38.	下面哪一句产生的是集合x,y的对称差？
+A.  x | y        B. x ^ y         C. x & y    D. x – y
+39.	下面代码的输出是( )
+a=[1, 4, 3, 5, 2]
+b=[3, 1, 5, 2, 4]
+print(a==b)
+set(a)==set(b)
+A  True        B. False        C. False         D. True
+False          False           True             True
+40.	下列程序的输出是( )
+a={3,4,5}
+a.update([1,2,3])
+a
+A.    错，set类型没有update()方法          B. {1, 2, 3, 4, 5}
+C.    错, list不能加到set里                D. 错, list中有重复元素
+41.	下列代码的输出是什么( )?
+d = {0: 'a', 1: 'b', 2: 'c'}
+for x, y in d:
+    print(x, y)
+A. 0 1 2    B. a b c        C. 0 a 1 b 2 c       D. 上述说法都不对
+42.	下列代码的输出是什么( )?
+d = {0: 'a', 1: 'b', 2: 'c'}
+for x, y in d.items( ):
+    print(x, y)
+A. 0 1 2    B. a b c        C. 0 a 1 b 2 c       D. 上述说法都不对
+43.	下列代码的输出是什么(  )?
+squares = {1:1, 2:4, 3:9, 4:16, 5:25}  
+print(squares.pop(4))  
+print(squares)
+A. 16                                  B. 16
+   {1: 1, 2: 4, 3: 9, 5: 25}              {1: 1, 2: 4, 3: 9, 4:16, 5: 25}
+C. 4                                  D. 4
+   {1: 1, 2: 4, 3: 9, 5: 25}              {1: 1, 2: 4, 3: 9, 4:16, 5: 25}
+44.	下列代码的输出是什么( )?
+a={1:"A",2:"B",3:"C"}
+b={4:"D",5:"E"}
+a.update(b)
+print(a)
+A.	{1: ‘A’, 2: ‘B’, 3: ‘C’}                    B. dict没有update()方法
+C.	{1: ‘A’, 2: ‘B’, 3: ‘C’, 4: ‘D’, 5: ‘E’}    D. {4: ‘D’, 5: ‘E’}
+45.	下列代码的输出是什么( )?
+a={}
+a[2]=1
+a[1]=[2,3,4]
+print(a[1][1])
+A.	[2,3,4]        B.  3       C.	2        d. 	An exception is thrown
+46.	写一个程序将如下的多个字典合并为一个字典。
+dic1={1:10, 2:20} 
+dic2={3:30, 4:40} 
+dic3={5:50,6:60}
+合并为 {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60} 
+47.	网上有一篇Painless Q Learning的文章介绍了一个 “机器人”如果从一个建筑物的任意一个房间走出建筑物的探索问题。如图10-4是建筑物的房间布局：
+   
+10-4 走出房间问题
+将房间作为图的顶点，将2个房间之间的门作为边，可以构造如图所示的一个图。边上的权值表示从一个门走向另外一个门的奖励。针对这个问题，请修改build_T_table函数，用于初始化该问题的数据，然后运行main()函数，观察执行结果。注意：目标状态走向自身的这个边在程序中可以忽略。
+```
+
+#### 5.7 习题
+
+```
+1.	下列程序的输出是什么？
+class C:
+  def Print(self, line='Python'):
+    print(line)
+
+a = C()
+a.Print('Java')
+2.	Python的__init__()函数的作用是（）
+A. 为使用一个类而初始化             B. 对象实例化时调用的函数
+C. 调用时，初始化数据属性的值为0    D. 上面的说法都不对
+3.	下列代码的输出是（）
+class Point:
+    def __init__(self, x = 0, y = 0):
+      self.x = x+1
+      self.y = y+1
+
+p1 = Point()
+print(p1.x, p1.y)
+A. 0 0         B. 1 1      C. None None       D. x,y
+4.	解释属性name, surname 和 profession之间的区别，并说明不同实例中这些属性的可能值。
+class Smith:
+ surname = "Smith"
+ profession = "smith"
+
+ def __init__(self, name, profession=None):
+     self.name = name
+     if profession is not None:
+         self.profession = profession
+5.	对于下面的表示二维平面上的点的类Point，补充完善__str__() 函数，使得对一个Point变量p，print(p)函数打印(x,y)格式。另外，重载定义+、-、<、==运算符，使得对两个点p、q，可直接使用p+q或p-q得到一个新的Point对象，可以用p<q或p==q比较它们的大小或是否相等。
+class Point:    
+    def __init__(self, x = 0, y = 0):
+        self.x = x
+        self.y = y
+
+    def __str__(self):
+        #补充你的代码， 
+        #...
+6.	下列程序的输出是什么？ ( )
+class A():
+    def disp(self):
+        print("A disp()")
+class B(A):
+    pass
+obj = B()
+obj.disp()
+A.非法的继承语法       B. 创建对象错误，缺少参数
+c) 什么也不输出        D. A disp()
+7.	下列程序的输出是什么？ ( )
+class A:
+    def __init__(self, x= 1):
+        self.x = x
+class der(A):
+    def __init__(self,y = 2):
+        super().__init__()
+        self.y = y
+def main():
+    obj = der()
+    print(obj.x, obj.y)
+A.	错，调用方法的语法错了
+b)	程序没任何错误，但不输出任何信息
+c)	1 0
+d)	1 2
+8.	如果一个类从2个不同的类派生，称为（）
+A. 多层继承    B.多继承   C. 层次继承  D. Python继承
+9.	下列程序的输出是什么？
+class C1:
+    def __init__(self):
+        self.x = 1
+class C2(C1):
+    def __init__(self):
+        super().__init__()
+        self.x = 2
+class C3(C2):
+    def __init__(self):
+        super(C3,self).__init__()
+        self.x = 3
+        
+a = C1()
+b = C2()
+c = C3()
+print(a.x,b.x,c.x)
+10.	下列程序的输出是什么？
+class C1:
+    def __init__(self):
+        print('C1')   
+    def f(self):
+        print('f in C1')   
+    
+class C2:
+    def __init__(self):
+        print('C2')
+        super().__init__()
+    def f(self):
+        print('f in C2')  
+       
+class C3(C1, C2):
+    def __init__(self):
+        print('C3')
+        super(C3,self).__init__()
+    def g(self):
+        print('g in C3')  
+        print('call f in C2') 
+        C2.f(self)
+        
+c = C3()
+c.f()
+c.g()
+11.	模仿下面的类circle（圆）的代码，完善定义表示二维几何图形的类Polygon（多边形）、Rectangle（矩形）、正方形（Square）、三角形（Triangle）。假设类shape是类的直接（间接）基类。
+class Shape:
+   def paint(self): pass
+   
+class Circle(Shape):
+   def __init__(self, x, y, r):
+      self.x = x
+      self.y = y
+      self.r = r
+      
+   def paint(self): 
+      print("画半径是{}、圆形在({},{})的圆",self.r,self.x,self.y)
+
+class Polygon(Shape):
+   #...
+class Rectangle(Polygon):
+   #...
+class Square(Rectangle):
+   #...
+class Triangle (Polygon):
+   #...
+12.	定义一个Person类，包含name（姓名）、sex（性别）、age（年龄）、address（住址）、email（电子邮箱）、phone（电话号码）等信息，然后在此基础上定义Student（学生）、Staff（员工），然后在Staff基础上定义Teacher（教师）。Student假设有一个dict属性记录其每门课程的学分，Staff假设至少有一个salary属性表示其薪水，Teacher有一个list对象存储其能教授的所有课程。在这些类的基础上写一个简单的学校人员管理程序，包含输入、查找、修改、删除、显示等操作。
+13.	实现二叉树的其他操作，如求一个二叉树的叶子结点数目、复制一颗二叉树、判断二叉树是否是相等或具有相似结构等等。
+14.	在BiTreeNode类的基础上，实现一个较为完善的二叉搜索树类BST，其中包含插入、查找、删除、修改、打印等操作，这些操作都作为BST类的方法而不是外部函数实现。
+```
