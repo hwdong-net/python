@@ -769,3 +769,95 @@ finally:
 A.  finally     B.  throw     C.  finally    D.  Syntax error    E.  except
 except        finally        throw                         finally
 ```
+
+#### 8.7 习题
+
+```
+1.	如何从一个list对象创建一个迭代器对象？
+A. 将给定的list对象传递给iter()函数    B. 用一个for循环
+C.用一个 while 循环                    D. 无法从list对象创建一个可迭代对象
+2.	包含了yield语句的函数是（）
+A. 可迭代的            B.生成器函数
+C. 匿名函数            D.上述说法都不对
+3.	在?处补充代码完善下面的生成器函数，使得可以生成一对整数之间的所有整数。
+def counter(low, high):
+    current = low
+    while current <= high:
+        ？
+for c in counter(3, 8):
+    print c
+4.	下列程序的输出是( )
+my_list = [1, 3, 6, 10]
+a = (x**2 for x in my_list)
+print(next(a), next(a))
+A. 1 3           B. 1 9         C. 1 9 36 100       D. 1
+5.	写一个程序，接受1个或多个文件名作为参数，输出文件中字符个数少于60的那些行。
+6.	写一个函数，输入一个整数n和一个文件名，将这个文件分割成每个文件都是n行的多个文件（除最后一个文件可以少于n行）。
+7.	8.3.1中用如下的代码来装饰say()和hello()函数，从而给say()和hello()函数添加了功能。
+wrapper(say)     
+wrapper(hello)    
+但调用say()和hello()的代码都要替换成上面的调用形式，为此，在wrapper()外层又定义decorator()函数来返回装饰say()和hello()函数，使得调用say()和hello()函数的代码不会受到任何影响。
+say = decorator(say)      
+hello = decorator(hello) 
+那么，为什么不可以直接用如下形式包装say()和hello()函数呢？
+say = wrapper(say)
+hello = wrapper(hello) 
+8.	哪个函数是装饰器函数？
+def mk(x):
+    def mk1():
+        print("Decorated")
+        x()
+    return mk1
+def mk2():
+    print("Ordinary")
+p = mk(mk2)
+p()
+A.  p()   B. mk()    C. mk1()    D. mk2()
+9.	假如f是一个装饰器函数，下面2个代码片段是否是等价的？（ ）
+片段1：
+@f
+def f1():
+     print(“Hello”)
+片段2：
+def f1():
+     print(“Hello”)
+f1 = f(f1)
+A. True B. False
+10.	下列代码的输出是( )
+def d(f):
+    def n(*args):
+        return '$' + str(f(*args))
+    return n
+@d
+def p(a, t):
+    return a + a*t 
+    
+print(p(100,0))
+
+A. 100    B. $100      C. $0    D. 0
+11.	运行下列的代码，并给student()函数添加位置参数(name和age)、可变参数(如address、class、mobile)和字典参数（如每门课对应的成绩：{‘C’:80,’Python’:90,’DS’:70.8}），并在student ()函数中输出这些参数。
+   def make_bold(fn):
+    def wrapped():
+        return "<b>" + fn() + "</b>"
+    return wrapped
+
+def make_italic(fn):
+    def wrapped():
+        return "<i>" + fn() + "</i>"
+    return wrapped
+
+def make_underline(fn):
+    def wrapped():
+        return "<u>" + fn() + "</u>"
+    return wrapped
+
+@make_bold
+@make_italic
+@make_underline
+def student():
+    return "a student"
+print(student())    # 输出： "<b><i><u>a student</u></i></b>"
+12.	定义表示日期的Date类，其中的属性的读写都采用@property。
+13.	请为上述的Date类写一个类方法，用于修改Date类的类属性default_date。
+14.	结合生活中的例子说明“深拷贝”的含义。
+```
