@@ -654,3 +654,118 @@ class Triangle (Polygon):
 13.	实现二叉树的其他操作，如求一个二叉树的叶子结点数目、复制一颗二叉树、判断二叉树是否是相等或具有相似结构等等。
 14.	在BiTreeNode类的基础上，实现一个较为完善的二叉搜索树类BST，其中包含插入、查找、删除、修改、打印等操作，这些操作都作为BST类的方法而不是外部函数实现。
 ```
+
+#### 6.3 习题
+
+```
+1.	open()函数中的文件模式参数“r, a”的含义是什么（  ）?
+A) 读，追加    B) 追加、读    C)  A和B都对   D)  A和B都不对
+2.	二进制读写模式是哪一个？(   )
+A)  wb+         B)  w        C)  wb         D)  w+
+3.	下面哪句是正确的？（）
+A) 当以读模式打开一个不存在文件时，会出现错误
+B) 当以写模式打开一个不存在文件时，会创建一个新文件
+C)  当以写模式打开一个存在文件时，存在的文件会被新文件替换
+D) 上述都对
+4.	下列代码做什么(  )?
+f = open("test.txt")
+A) 以读写方式打开test.txt
+B) 以读方式打开test.txt
+C) 以写方式打开test.txt
+D) 以读或写方式打开test.txt
+5.	写一个程序找出一个文件中最长的单词。
+6.	编写一个程序，从键盘上输入一组学生的信息（假如每个学士有姓名、学号和分数3个数据项），要求一个学生的信息在一行中输入，将所有学生的信息写入到一个文本文件中，再从文件中读取并显示所有学生的信息，要求每个数据项占据固定的宽度并左对齐。然后修改第3个学生的信息，并将修改后的学生信息写到文件中，并再次读入显示所有学生数据以验证数据是否正确的被修改了。
+7.	编写一个程序，从键盘输入一组三维坐标点数据，将这些数据写入到一个二进制文件中，然后单独读取第3个坐标点的数据，修改后再写入到文件中。
+```
+
+#### 7.4 习题
+
+```
+1.	找出下面程序中的语法错误，并解释错误的原因。
+1）myfunction(x, y):
+     return x + y
+2）else:
+     print("Hello!")
+3）if mark >= 50
+     print("You passed!")
+4）if arriving:
+      print("Hi!")
+   esle:
+      print("Bye!")
+5）if flag:
+   print("Flag is set!")
+2.	找出下面的运行时错误(逻辑错误)
+1）product = 0
+for i in range(10):
+    product *= i
+2） sum_squares = 0
+for i in range(10):
+    i_sq = i**2
+sum_squares += i_sq
+3） nums = 0
+for num in range(10):
+    num += num
+3.	一个try-except块可以有多少异常处理语句(except statements)？
+A.  0         B. 1    C. 多于1个        D.多于0个
+4.	打开一个不存在的文件会发生什么？（）
+A. 创建一个新文件        B. 什么也不发生 
+C.抛出一个exception      D.上述说法都不对
+5.	 try-except-else的else子句什么时候执行？( )
+A. 总会执行               B. 异常出现时才执行      
+C. 没有异常发生时才执行   D. 当except块中发生异常时才执行
+6.	下列代码的输出是什么？( )
+def foo():
+    try:
+        return 1
+    finally:
+        return 2
+k = foo()
+print(k)
+
+A.   1         b.    2    C. 3    
+D. 错，在一个try-finally有多于一个return语句
+7.	下列代码的输出是什么？
+number = 5.0
+try:
+    r = 10/number
+    print(r)
+except:
+    print("Oops! Error occurred.")
+A. Oops! Error occurred.     B. 2.0
+C.2.0 Oops! Error occurred.   D. None object
+8.	下列代码做什么？
+try:
+  # code that can raise error
+   pass
+  
+except (TypeError, ZeroDivisionError):
+  print("TWO")
+A. 只要出现异常exception(不管什么异常）就打印TWO
+A. 不出现异常exception时就打印TWO
+C. 出现TypeError 或 ZeroDivisionError异常就打印TWO 
+D. 当TypeError和 ZeroDivisionError异常都出现时才打印TWO 
+9.	对字符串strtext = “Welcome”，下面哪句会产生TypeError
+A.  strtext[1]= ‘r’
+B.  print (strtext[0])
+C.  print(strtext.strip())
+D.  print (strtext.lower())
+E.  None of these
+10.	下列代码的输出是（）
+def  Test():
+    try:
+        print(20)
+    finally:
+        print(30)
+Test()
+A.  30       B.  20       C.  30      D.  20       E.  None
+    20          30                       5        
+14. 下列代码的输出是（）
+try:
+    print("throw")
+except:
+    print("except")
+finally:
+    print("finally")
+A.  finally     B.  throw     C.  finally    D.  Syntax error    E.  except
+except        finally        throw                         finally
+```
