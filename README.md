@@ -7,7 +7,7 @@
 - [youtube channel 频道: hwdong](http://www.youtube.com/c/hwdong)
 - [blog 博客：](https://hwdong-net.github.io)
 - [腾讯课堂高质量编程课程：](http://hwdong.ke.qq.com)
-- [B站编程课程hw-dong：](https://space.bilibili.com/281453312)
+- **[B站编程课程hw-dong：](https://space.bilibili.com/281453312/pugv)**
 - [推特 :](https://twitter.com/hwdong)
 - [电报群：](https://t.me/hwdong)
 - QQ群：376330161
