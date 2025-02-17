@@ -23,6 +23,20 @@
 + 《Python3从入门到实战》（电子工业出版社出版）. 语法和项目实战结合的python教材，通俗容懂，配有许多实战小项目如游戏编程、机器学习案例。
 
 
+## 我在udemy上的课程：
+
+我在udemy上课程的学生人数一直在增长，由于udemy上的课程价格特别低，所以一直没有分享出来，现在分享出来：
+
+算法设计与分析：
+https://www.udemy.com/course/hwdongdda/?referralCode=83E54D9C154313393A69
+
+C++版本数据结构：
+https://www.udemy.com/course/c-gxnkve/?referralCode=631859C266324D94DB28
+
+解剖深度学习原理-从0编写深度学习库：
+https://www.udemy.com/course/dl_hwdong/?referralCode=60943453055D37DDB9A7
+
+
 #### YouTube频道列表：
 - [C语言快速入门（7小时）](https://www.youtube.com/playlist?list=PLBijWKRKPQMI11w6DDO6ZlfAfYkIuQYwM)
 - [从C到C++快速入门(2019版)： ](https://www.youtube.com/playlist?list=PLBijWKRKPQMLrjj9yT7TWW9Bc23l-aBLx)
